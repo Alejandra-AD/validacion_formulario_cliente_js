@@ -12,11 +12,11 @@
 <body>
     <div class="container">
         <h1>Fomularios</h1>
-        <form>
+        <form id="formulario">
             <input class="form-control mb-2" type="text" name="userName" placeholder="Ingrese nombre" autocomplete="off"
-                id="userName">
+                id="userName" minlength="3" maxlength="10" required>
             <input class="form-control mb-2" type="email" name="userEmail" placeholder="Ingrese un correo"
-                id="userEmail">
+                id="userEmail" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" title="Ingrese un correo válido">
             <button type="submit" class="btn btn-primary">Enviar</button>
 
         </form>
