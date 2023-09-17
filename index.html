@@ -10,22 +10,44 @@
 </head>
 
 <body>
-    <div class="container">
-        <h1>Fomularios</h1>
-        <form id="formulario">
-            <input class="form-control mb-2" type="text" name="userName" placeholder="Ingrese nombre" autocomplete="off"
-                id="userName" minlength="3" maxlength="10" required>
-            <p class="text-danger mb-2 d-none" id="alertName"></p>
-            <input class="form-control mb-2" type="email" name="userEmail" placeholder="Ingrese un correo"
-                id="userEmail" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
-                title="Ingrese un correo válido">
-            <button type="submit" class="btn btn-primary">Enviar</button>
-            <p class="text-danger mb-2 d-none" id="alertEmail"></p>
-        </form>
-        <div class="alert alert-success my-2 d-none" id="alertSuccess">
-            Mensaje enviado con éxito
+    <body>
+        <div class="container">
+            <h1>Formularios</h1>
+
+            <form id="formulario">
+                <input
+                    class="form-control mb-2"
+                    name="userName"
+                    placeholder="Ingrese su nombre"
+                    autocomplete="off"
+                    id="userName"
+                    type="text"
+                    value="ale"
+                    required
+                />
+
+                <p class="text-danger mb-2 d-none" id="alertName"></p>
+
+                <input
+                    class="form-control mb-2"
+                    name="userEmail"
+                    placeholder="Ingrese su correo"
+                    id="userEmail"
+                    autocomplete="off"
+                    type="email"
+                    value="ale@hola.com"
+                    required
+                />
+
+                <p class="text-danger mb-2 d-none" id="alertEmail"></p>
+
+                <button class="btn btn-primary" type="submit">Enviar</button>
+            </form>
+            <div
+                class="alert alert-success mt-2 d-none"
+                id="alertSuccess"
+            ></div>
         </div>
-    </div>
     <script src="index.js"></script>
 
 </body>
